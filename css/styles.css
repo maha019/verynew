@@ -18,7 +18,7 @@ p {
 
 /* sections */
 .colored-section {
-  padding: 4% 12%;
+  padding: 3% 15% 7%;
   background-color: #ff4c68;
   color: #fff;
 }
@@ -51,16 +51,6 @@ p {
 
 /* header */
 
-.container-fluid{
-  height: 545px;
-  padding: 0;
-
-}
-
-
-.title-div{
-  padding: 5px;
-}
 
 .main-title {
   font-size: 3.5rem;
@@ -71,10 +61,12 @@ p {
 .download-btn {
   margin: 5px 10px 5px 0;
 }
+.title-div{text-align: left;}
 .title-img{
   transform: rotate(25deg);
-  height: 67%;
-  right: 27%;
+ height: 60%;
+  position: absolute;
+  right: 20%;
 }
 
 /* features */
@@ -148,4 +140,21 @@ margin: 20px 20px 50px;}
 /* footer */
 #footer{
   padding: 7% 15%;
+}
+
+
+
+/* media query */
+
+@media  screen and (max-width: 1043px) {
+  .title-div {text-align: center;}
+  .img-div{height: 550px;}
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    height: 99%;
+  }
+}
+@media  screen and (max-width: 991px) {
+  .img-div{margin-top: 70px;}
 }
